@@ -1,0 +1,28 @@
+{
+  "name": "module-1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "bundle-js": "browserify lib/hello.js > static/hello.js",
+    "build-js": "babel src -d lib --source-maps",
+    "flow": "flow; test $? -eq 0 -o $? -eq 2",
+    "build": "npm run build-js && npm run bundle-js"
+  },
+  "keywords": [
+    "es6",
+    "es2020",
+    "demo"
+  ],
+  "author": "Roshada",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-plugin-syntax-flow": "^6.18.0",
+    "babel-plugin-transform-async-to-generator": "^6.24.1",
+    "babel-plugin-transform-flow-strip-types": "^6.22.0",
+    "babel-preset-es2015": "^6.24.1",
+    "browserify": "^16.5.0",
+    "flow-bin": "^0.121.0"
+  }
+}
