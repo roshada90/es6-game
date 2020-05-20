@@ -1,6 +1,6 @@
 # ecma6-game
 Simple game using ecma6 with babel.js, browserify and flow for testing
-
+@author: [Roshada A](roshadaafzal.tech)
 ## Quick Start
 ``` typescript
 # Install dependencies for server
